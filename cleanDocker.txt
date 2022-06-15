@@ -1,0 +1,4 @@
+docker system prune
+docker volume prune
+docker rmi -f $(docker images -a -q)
+docker image prune -a
